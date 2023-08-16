@@ -1,11 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from "react";
+import { MotiView } from "moti";
+import { StyleSheet, View } from "react-native";
 
+const LoadingIndicator = ({ size }: { size: number }) => {
+  return (
+    <MotiView
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        borderWidth: size / 10,
+        borderColor: "#fff",
+      }}
+    />
+  );
+};
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <LoadingIndicator size={100} />
     </View>
   );
 }
@@ -13,8 +26,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#010100",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
