@@ -31,7 +31,7 @@ const LoadingIndicator = ({ size }: { size: number }) => {
           height: size,
           borderRadius: size / 2,
           borderWidth: size / 10,
-          borderColor: "#fff",
+          borderColor: "#C2C2C2",
           shadowColor: "#fff",
           shadowOffset: { width: 0, height: 0 },
           shadowOpacity: 1,
