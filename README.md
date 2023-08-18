@@ -21,7 +21,7 @@ Make sure you have the following software installed:
 1. Clone this repository to your local machine using:
 
    ```bash
-   git clone [https://github.com/your-username/your-expo-app.git](https://github.com/rubentanahara/expo-animations.git)
+   git clone https://github.com/rubentanahara/expo-animations.git
    ```
 
 2. Navigate to the project directory:
